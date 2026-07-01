@@ -1,0 +1,304 @@
+{
+ "delta": 0.1,
+ "Ms": [
+  10,
+  40,
+  100,
+  500
+ ],
+ "Rs": [
+  0.8,
+  0.85,
+  0.9
+ ],
+ "cells": [
+  {
+   "R": 0.8,
+   "M": 10,
+   "method": "unsafe",
+   "cert_rate": 0.422,
+   "session_false_cert": 0.025,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 40,
+   "method": "unsafe",
+   "cert_rate": 0.875,
+   "session_false_cert": 0.039,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 100,
+   "method": "unsafe",
+   "cert_rate": 0.997,
+   "session_false_cert": 0.037,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 500,
+   "method": "unsafe",
+   "cert_rate": 1.0,
+   "session_false_cert": 0.029,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 10,
+   "method": "firewall",
+   "cert_rate": 0.087,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 40,
+   "method": "firewall",
+   "cert_rate": 0.089,
+   "session_false_cert": 0.002,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 100,
+   "method": "firewall",
+   "cert_rate": 0.102,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 500,
+   "method": "firewall",
+   "cert_rate": 0.111,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 10,
+   "method": "split",
+   "cert_rate": 0.035,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 40,
+   "method": "split",
+   "cert_rate": 0.039,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 100,
+   "method": "split",
+   "cert_rate": 0.059,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.8,
+   "M": 500,
+   "method": "split",
+   "cert_rate": 0.054,
+   "session_false_cert": 0.002,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 10,
+   "method": "unsafe",
+   "cert_rate": 0.402,
+   "session_false_cert": 0.017,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 40,
+   "method": "unsafe",
+   "cert_rate": 0.874,
+   "session_false_cert": 0.029,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 100,
+   "method": "unsafe",
+   "cert_rate": 0.992,
+   "session_false_cert": 0.028,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 500,
+   "method": "unsafe",
+   "cert_rate": 1.0,
+   "session_false_cert": 0.022,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 10,
+   "method": "firewall",
+   "cert_rate": 0.095,
+   "session_false_cert": 0.002,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 40,
+   "method": "firewall",
+   "cert_rate": 0.09,
+   "session_false_cert": 0.002,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 100,
+   "method": "firewall",
+   "cert_rate": 0.106,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 500,
+   "method": "firewall",
+   "cert_rate": 0.118,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 10,
+   "method": "split",
+   "cert_rate": 0.029,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 40,
+   "method": "split",
+   "cert_rate": 0.025,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 100,
+   "method": "split",
+   "cert_rate": 0.034,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.85,
+   "M": 500,
+   "method": "split",
+   "cert_rate": 0.03,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 10,
+   "method": "unsafe",
+   "cert_rate": 0.541,
+   "session_false_cert": 0.016,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 40,
+   "method": "unsafe",
+   "cert_rate": 0.958,
+   "session_false_cert": 0.018,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 100,
+   "method": "unsafe",
+   "cert_rate": 0.999,
+   "session_false_cert": 0.018,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 500,
+   "method": "unsafe",
+   "cert_rate": 1.0,
+   "session_false_cert": 0.006,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 10,
+   "method": "firewall",
+   "cert_rate": 0.141,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 40,
+   "method": "firewall",
+   "cert_rate": 0.15,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 100,
+   "method": "firewall",
+   "cert_rate": 0.153,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 500,
+   "method": "firewall",
+   "cert_rate": 0.198,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 10,
+   "method": "split",
+   "cert_rate": 0.044,
+   "session_false_cert": 0.0,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 40,
+   "method": "split",
+   "cert_rate": 0.043,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 100,
+   "method": "split",
+   "cert_rate": 0.043,
+   "session_false_cert": 0.001,
+   "invalid": false
+  },
+  {
+   "R": 0.9,
+   "M": 500,
+   "method": "split",
+   "cert_rate": 0.05,
+   "session_false_cert": 0.0,
+   "invalid": false
+  }
+ ]
+}

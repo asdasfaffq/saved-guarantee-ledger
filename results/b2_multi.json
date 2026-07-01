@@ -1,0 +1,47 @@
+{
+  "dataset": "20newsgroups",
+  "proxy": "MiniLM+LR",
+  "rate": 1.0,
+  "rows": [
+    {
+      "predicate": "rec.sport.baseball",
+      "recall_start": 1.0,
+      "recall_end": 0.5959595959595959,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.95
+      }
+    },
+    {
+      "predicate": "sci.med",
+      "recall_start": 1.0,
+      "recall_end": 0.601010101010101,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.91
+      }
+    },
+    {
+      "predicate": "sci.space",
+      "recall_start": 1.0,
+      "recall_end": 0.5989847715736041,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.94
+      }
+    },
+    {
+      "predicate": "talk.politics.guns",
+      "recall_start": 1.0,
+      "recall_end": 0.5989010989010989,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.99
+      }
+    }
+  ]
+}

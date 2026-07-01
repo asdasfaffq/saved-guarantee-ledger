@@ -1,0 +1,104 @@
+{
+  "B": 25,
+  "ell": 0.7,
+  "delta": 0.1,
+  "n_seeds": 300,
+  "rows": [
+    {
+      "eps": 0.0,
+      "method": "pooled",
+      "correct": 0.4553333333333333,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.0,
+      "method": "fixedN",
+      "correct": 0.0,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.0,
+      "method": "perquery",
+      "correct": 0.0236,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.0,
+      "method": "SAVEDw",
+      "correct": 0.4765333333333333,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.4,
+      "method": "pooled",
+      "correct": 0.11666666666666667,
+      "false_perq": 0.0164,
+      "session_lie_rate": 0.24333333333333335,
+      "trustworthy": false
+    },
+    {
+      "eps": 0.4,
+      "method": "fixedN",
+      "correct": 0.0,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.4,
+      "method": "perquery",
+      "correct": 0.008266666666666667,
+      "false_perq": 0.0008,
+      "session_lie_rate": 0.016666666666666666,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.4,
+      "method": "SAVEDw",
+      "correct": 0.0376,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.8,
+      "method": "pooled",
+      "correct": 0.04306666666666667,
+      "false_perq": 0.012933333333333333,
+      "session_lie_rate": 0.17,
+      "trustworthy": false
+    },
+    {
+      "eps": 0.8,
+      "method": "fixedN",
+      "correct": 0.0,
+      "false_perq": 0.0,
+      "session_lie_rate": 0.0,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.8,
+      "method": "perquery",
+      "correct": 0.004,
+      "false_perq": 0.0005333333333333334,
+      "session_lie_rate": 0.013333333333333334,
+      "trustworthy": true
+    },
+    {
+      "eps": 0.8,
+      "method": "SAVEDw",
+      "correct": 0.011866666666666666,
+      "false_perq": 0.00013333333333333334,
+      "session_lie_rate": 0.0033333333333333335,
+      "trustworthy": true
+    }
+  ]
+}

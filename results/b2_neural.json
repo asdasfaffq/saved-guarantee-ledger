@@ -1,0 +1,45 @@
+{
+  "proxy": "all-MiniLM-L6-v2 + LogisticRegression",
+  "dataset": "20newsgroups sci.med",
+  "n_pos": 396,
+  "tau": 0.6631988225726855,
+  "recall_easy": 1.0,
+  "recall_hard": 0.601010101010101,
+  "delta": 0.1,
+  "target": 0.7,
+  "rows": [
+    {
+      "rate": 0.0,
+      "recall_start": 1.0,
+      "recall_end": 1.0,
+      "kappa": 0.0,
+      "coverage": {
+        "FixedN": 1.0,
+        "PooledCS": 1.0,
+        "SAVED": 1.0
+      }
+    },
+    {
+      "rate": 0.6,
+      "recall_start": 1.0,
+      "recall_end": 0.7606060606060606,
+      "kappa": 0.23939393939393938,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.8833333333333333
+      }
+    },
+    {
+      "rate": 1.0,
+      "recall_start": 1.0,
+      "recall_end": 0.601010101010101,
+      "kappa": 0.398989898989899,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.9083333333333333
+      }
+    }
+  ]
+}

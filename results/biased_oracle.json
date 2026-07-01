@@ -1,0 +1,2 @@
+{"delta":0.1,"true_recall":0.864,"n_seeds":200,"note":"no drift; rho=proxy-correlated oracle bias; coverage=1-P(CS lower bound ever exceeds true recall). Reproduce: python3 experiments/biased_oracle.py",
+ "rows":[{"rho":0.0,"naive":0.920,"anchor":0.975},{"rho":0.5,"naive":0.230,"anchor":0.975},{"rho":1.0,"naive":0.000,"anchor":0.975}]}

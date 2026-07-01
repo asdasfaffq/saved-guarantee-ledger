@@ -1,0 +1,161 @@
+{
+  "delta": 0.1,
+  "target": 0.8,
+  "n_seeds": 120,
+  "cells": [
+    {
+      "ell": 0.0,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 2705.641666666667,
+        "cpc": 0.006209247960280525,
+        "breach_rate": 0.0
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 2705.641666666667,
+        "cpc": 0.006209247960280525,
+        "breach_rate": 0.0
+      },
+      "verdict": "no win (pooled <=)"
+    },
+    {
+      "ell": 0.0,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 3288.25,
+        "cpc": 0.0016320737981195671,
+        "breach_rate": 0.3416666666666667
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3288.25,
+        "cpc": 0.0016320737981195671,
+        "breach_rate": 0.3416666666666667
+      },
+      "verdict": "VOID(pooled invalid)"
+    },
+    {
+      "ell": 0.0,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 3436.8333333333335,
+        "cpc": 0.0008244023083264633,
+        "breach_rate": 0.19166666666666668
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3436.8333333333335,
+        "cpc": 0.0008244023083264633,
+        "breach_rate": 0.19166666666666668
+      },
+      "verdict": "VOID(pooled invalid)"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 566.2666666666667,
+        "cpc": 0.04813692017894985,
+        "breach_rate": 0.0
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 1050.3833333333334,
+        "cpc": 0.024062643796709138,
+        "breach_rate": 0.0
+      },
+      "verdict": "no win (pooled <=)"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 2509.508333333333,
+        "cpc": 0.004018051344718919,
+        "breach_rate": 0.25
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3106.0666666666666,
+        "cpc": 0.0017760940954261552,
+        "breach_rate": 0.13333333333333333
+      },
+      "verdict": "VOID(pooled invalid)"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 3030.8416666666667,
+        "cpc": 0.0017706852606949115,
+        "breach_rate": 0.225
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 3408.141666666667,
+        "cpc": 0.0006821899520021909,
+        "breach_rate": 0.09166666666666666
+      },
+      "verdict": "VOID(pooled invalid)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 253.73333333333332,
+        "cpc": 0.1137677351550184,
+        "breach_rate": 0.0
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 325.4166666666667,
+        "cpc": 0.0879641485275288,
+        "breach_rate": 0.0
+      },
+      "verdict": "no win (pooled <=)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 2189.5916666666667,
+        "cpc": 0.005529950409322895,
+        "breach_rate": 0.19166666666666668
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 2555.35,
+        "cpc": 0.0037600850503192646,
+        "breach_rate": 0.30833333333333335
+      },
+      "verdict": "VOID(pooled invalid)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 2939.5,
+        "cpc": 0.0020468333616828257,
+        "breach_rate": 0.13333333333333333
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3233.5333333333333,
+        "cpc": 0.0011648763993979754,
+        "breach_rate": 0.13333333333333333
+      },
+      "verdict": "VOID(pooled invalid)"
+    }
+  ],
+  "c2_sweet_spot_nonempty": false
+}

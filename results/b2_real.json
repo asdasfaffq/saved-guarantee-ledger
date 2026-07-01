@@ -1,0 +1,15 @@
+{
+  "dataset": "20newsgroups (4 classes), target predicate = sci.med",
+  "proxy": "TF-IDF + LogisticRegression P(positive), scored on held-out test split",
+  "n_pos": 396, "tau": 0.296, "recall_easy": 1.000, "recall_hard": 0.601,
+  "delta": 0.1, "target_recall": 0.70, "T": 600, "n_seeds": 120,
+  "note": "drift induced by time-varying easy/hard positive mixture from REAL proxy scores; kappa computed exactly and handed to SAVED. oracle = dataset label (model-agnostic; no live LLM). Reproduce: python3 experiments/b2_real.py",
+  "rows": [
+    {"rate": 0.0, "recall_start": 1.000, "recall_end": 1.000, "kappa": 0.000,
+     "coverage": {"FixedN": 1.000, "PooledCS": 1.000, "SAVED": 1.000}},
+    {"rate": 0.6, "recall_start": 1.000, "recall_end": 0.761, "kappa": 0.239,
+     "coverage": {"FixedN": 0.000, "PooledCS": 0.000, "SAVED": 0.908}},
+    {"rate": 1.0, "recall_start": 1.000, "recall_end": 0.601, "kappa": 0.399,
+     "coverage": {"FixedN": 0.000, "PooledCS": 0.000, "SAVED": 0.925}}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "dataset": "ag_news",
+  "proxy": "MiniLM+LR",
+  "rate": 1.0,
+  "rows": [
+    {
+      "predicate": "World",
+      "recall_start": 1.0,
+      "recall_end": 0.5996131528046421,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.98
+      }
+    },
+    {
+      "predicate": "Sports",
+      "recall_start": 1.0,
+      "recall_end": 0.5996055226824457,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.9299999999999999
+      }
+    },
+    {
+      "predicate": "Business",
+      "recall_start": 1.0,
+      "recall_end": 0.5991561181434599,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.95
+      }
+    },
+    {
+      "predicate": "Sci/Tech",
+      "recall_start": 1.0,
+      "recall_end": 0.5988023952095808,
+      "coverage": {
+        "FixedN": 0.0,
+        "PooledCS": 0.0,
+        "SAVED": 0.94
+      }
+    }
+  ]
+}

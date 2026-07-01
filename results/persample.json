@@ -1,0 +1,50 @@
+{
+ "delta": 0.1,
+ "note": "per-sample (Prop 3a, rigorous) vs mean-age (3b, heuristic) streaming coverage+power. Reproduce: python3 experiments/persample_check.py",
+ "rows": [
+  {
+   "eps": 0.0,
+   "meanage": {
+    "cov": 0.84,
+    "pow": 0.769
+   },
+   "persample": {
+    "cov": 0.965,
+    "pow": 0.803
+   }
+  },
+  {
+   "eps": 0.4,
+   "meanage": {
+    "cov": 0.965,
+    "pow": 0.619
+   },
+   "persample": {
+    "cov": 0.98,
+    "pow": 0.665
+   }
+  },
+  {
+   "eps": 0.8,
+   "meanage": {
+    "cov": 0.995,
+    "pow": 0.444
+   },
+   "persample": {
+    "cov": 0.97,
+    "pow": 0.516
+   }
+  },
+  {
+   "eps": 1.2,
+   "meanage": {
+    "cov": 0.995,
+    "pow": 0.269
+   },
+   "persample": {
+    "cov": 0.975,
+    "pow": 0.364
+   }
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "n_pool": 500,
+ "n_seeds": 50,
+ "glm_positives": 111,
+ "tau": 0.2585963798910248,
+ "glm_model": "glm-5.2",
+ "glm_endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+ "base_recall": 0.8468468468468469,
+ "glm_vs_truth_recall": 0.8050847457627118,
+ "glm_vs_truth_prec": 0.8558558558558559,
+ "cells": [
+  {
+   "eps": 0.0,
+   "supg": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "pooled": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "saved": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   }
+  },
+  {
+   "eps": 0.2,
+   "supg": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "pooled": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "saved": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   }
+  },
+  {
+   "eps": 0.4,
+   "supg": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "pooled": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "saved": {
+    "trusted_yield": 0.999,
+    "session_false_rate": 0.0
+   }
+  },
+  {
+   "eps": 0.6,
+   "supg": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "pooled": {
+    "trusted_yield": 1.0,
+    "session_false_rate": 0.0
+   },
+   "saved": {
+    "trusted_yield": 0.752,
+    "session_false_rate": 0.0
+   }
+  },
+  {
+   "eps": 0.8,
+   "supg": {
+    "trusted_yield": 0.8,
+    "session_false_rate": 1.0
+   },
+   "pooled": {
+    "trusted_yield": 0.8,
+    "session_false_rate": 1.0
+   },
+   "saved": {
+    "trusted_yield": 0.563,
+    "session_false_rate": 0.0
+   }
+  }
+ ]
+}

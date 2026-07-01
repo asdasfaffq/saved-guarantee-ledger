@@ -1,0 +1,56 @@
+{
+ "delta": 0.1,
+ "rows": [
+  {
+   "eps": 0.0,
+   "coverage": {
+    "none": 0.98,
+    "persample": 0.98,
+    "maxage": 0.98,
+    "meanage": 0.98,
+    "fixedlam": 0.98
+   },
+   "power": {
+    "none": 0.6849273809523785,
+    "persample": 0.6849273809523785,
+    "maxage": 0.6849273809523785,
+    "meanage": 0.6849273809523785,
+    "fixedlam": 0.6773892857142854
+   }
+  },
+  {
+   "eps": 0.4,
+   "coverage": {
+    "none": 0.72,
+    "persample": 1.0,
+    "maxage": 1.0,
+    "meanage": 1.0,
+    "fixedlam": 1.0
+   },
+   "power": {
+    "none": 0.6558095238095234,
+    "persample": 0.6156380952380942,
+    "maxage": 0.5767511904761911,
+    "meanage": 0.6159194955781953,
+    "fixedlam": 0.6087059523809536
+   }
+  },
+  {
+   "eps": 0.8,
+   "coverage": {
+    "none": 0.06999999999999995,
+    "persample": 1.0,
+    "maxage": 1.0,
+    "meanage": 0.99,
+    "fixedlam": 1.0
+   },
+   "power": {
+    "none": 0.6256214285714288,
+    "persample": 0.5449130952380945,
+    "maxage": 0.46751428571428566,
+    "meanage": 0.5458413721087705,
+    "fixedlam": 0.5382261904761899
+   }
+  }
+ ]
+}

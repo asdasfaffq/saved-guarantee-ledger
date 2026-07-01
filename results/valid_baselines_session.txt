@@ -1,0 +1,11 @@
+
+SESSION-LEVEL valid-baselines (delta=0.1, target=0.8, N=25 queries/session, 400 sessions)
+VALID (session) := session_false_rate <= delta. Trusted yield = certified-and-true / query-instances.
+
+ eps |                  saved |             fresh-only |          recent-window |                max-age
+--------------------------------------------------------------------------------------------------------
+ 0.0 |     yld0.71 sFC0.00[V] |     yld0.10 sFC0.00[V] |     yld0.42 sFC0.00[V] |     yld0.71 sFC0.00[V]
+ 0.4 |     yld0.08 sFC0.00[V] | yld0.04 sFC0.11[INVALID] | yld0.13 sFC0.17[INVALID] |     yld0.05 sFC0.00[V]
+ 0.8 |     yld0.03 sFC0.00[V] |     yld0.02 sFC0.09[V] | yld0.08 sFC0.17[INVALID] |     yld0.03 sFC0.00[V]
+
+(sFC = session-level false-cert rate; must be <= delta=0.1 to be a VALID comparator)

@@ -1,0 +1,170 @@
+{
+  "delta": 0.1,
+  "target": 0.8,
+  "n_seeds": 120,
+  "cells": [
+    {
+      "ell": 0.0,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 2705.641666666667
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 2705.641666666667
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 2705.641666666667
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.0,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 3288.25
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3288.25
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3288.25
+      },
+      "strongest_valid": "none",
+      "verdict": "SAVED invalid"
+    },
+    {
+      "ell": 0.0,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 3436.8333333333335
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3436.8333333333335
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3436.8333333333335
+      },
+      "strongest_valid": "none",
+      "verdict": "SAVED invalid"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 469.3666666666667
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 2723.5
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 1600.125
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 2395.3416666666667
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3295.508333333333
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3135.116666666667
+      },
+      "strongest_valid": "none",
+      "verdict": "SAVED invalid"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 3024.366666666667
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3444.6583333333333
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 3391.1833333333334
+      },
+      "strongest_valid": "none",
+      "verdict": "no valid baseline"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 243.24166666666667
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 2704.625
+      },
+      "saved": {
+        "valid": true,
+        "fresh": 1365.4583333333333
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.4,
+      "pooled": {
+        "valid": true,
+        "fresh": 2299.225
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3298.05
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 2970.475
+      },
+      "strongest_valid": "pooled",
+      "verdict": "SAVED invalid"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 2973.2083333333335
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3447.508333333333
+      },
+      "saved": {
+        "valid": false,
+        "fresh": 3308.858333333333
+      },
+      "strongest_valid": "none",
+      "verdict": "SAVED invalid"
+    }
+  ],
+  "c2_sweet_spot_nonempty": false
+}

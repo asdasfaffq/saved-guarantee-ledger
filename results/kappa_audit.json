@@ -1,0 +1,51 @@
+{
+ "delta": 0.1,
+ "rows": [
+  {
+   "eps": 0.4,
+   "exact": {
+    "coverage": 1.0,
+    "power": 0.6322516666666664,
+    "sentinel_labels": 0
+   },
+   "sentinel": {
+    "coverage": 1.0,
+    "power": 0.1751695833333337,
+    "sentinel_labels": 60
+   },
+   "under": {
+    "coverage": 0.95,
+    "power": 0.652612083333333,
+    "sentinel_labels": 0
+   },
+   "over": {
+    "coverage": 1.0,
+    "power": 0.5912195833333337,
+    "sentinel_labels": 0
+   }
+  },
+  {
+   "eps": 0.8,
+   "exact": {
+    "coverage": 0.9833333333333333,
+    "power": 0.5626183333333341,
+    "sentinel_labels": 0
+   },
+   "sentinel": {
+    "coverage": 1.0,
+    "power": 0.15146166666666652,
+    "sentinel_labels": 60
+   },
+   "under": {
+    "coverage": 0.6916666666666667,
+    "power": 0.6037033333333344,
+    "sentinel_labels": 0
+   },
+   "over": {
+    "coverage": 1.0,
+    "power": 0.4791666666666666,
+    "sentinel_labels": 0
+   }
+  }
+ ]
+}

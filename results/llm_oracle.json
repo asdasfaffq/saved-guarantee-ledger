@@ -1,0 +1,12 @@
+{
+  "llm": "Qwen2.5-0.5B-Instruct",
+  "acc": 0.46285140562248994,
+  "llm_recall": 0.9040404040404041,
+  "corr_keep_proxy": 0.10977294304880655,
+  "tau": 0.663198797600283,
+  "true_recall": 0.8005050505050505,
+  "naive_recall_est": 0.8184357541899442,
+  "coverage_naive": 0.88,
+  "coverage_anchor": 0.97,
+  "delta": 0.1
+}

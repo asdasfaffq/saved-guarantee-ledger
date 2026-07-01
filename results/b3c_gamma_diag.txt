@@ -1,0 +1,24 @@
+
+--- ell=0.9 eps=0.0 (n=100) ---
+ gamma |  pooled v/fr |  SAVEDw v/fr | win vs pooled?
+   1.0 |   T/    252 |   T/    252 | False
+   0.7 |   T/    252 |   T/    233 | True
+   0.5 |   T/    252 |   T/    222 | True
+   0.2 |   T/    252 |   T/    204 | True
+  0.04 |   T/    252 |   T/    187 | True
+
+--- ell=0.5 eps=0.0 (n=100) ---
+ gamma |  pooled v/fr |  SAVEDw v/fr | win vs pooled?
+   1.0 |   T/    460 |   T/    460 | False
+   0.7 |   T/    460 |   T/    391 | True
+   0.5 |   T/    460 |   T/    365 | True
+   0.2 |   T/    460 |   T/    330 | True
+  0.04 |   T/    463 |   T/    321 | True
+
+--- ell=0.9 eps=0.2 (n=100) ---
+ gamma |  pooled v/fr |  SAVEDw v/fr | win vs pooled?
+   1.0 |   T/   1054 |   T/   2628 | False
+   0.7 |   T/    994 |   T/   2505 | False
+   0.5 |   T/   1031 |   T/   2356 | False
+   0.2 |   T/   1000 |   T/   1943 | False
+  0.04 |   T/   1034 |   T/   1633 | False

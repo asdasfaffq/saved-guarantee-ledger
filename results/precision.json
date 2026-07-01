@@ -1,0 +1,36 @@
+{
+ "delta": 0.1,
+ "target_precision": 0.9,
+ "rows": [
+  {
+   "eps": 0.0,
+   "fixedN": {
+    "yield": 0.0,
+    "sfc": 0.0
+   },
+   "streamReDD": {
+    "yield": 0.3546,
+    "sfc": 0.0
+   },
+   "saved": {
+    "yield": 0.3546,
+    "sfc": 0.0
+   }
+  },
+  {
+   "eps": 1.6,
+   "fixedN": {
+    "yield": 0.0,
+    "sfc": 0.0
+   },
+   "streamReDD": {
+    "yield": 0.0906,
+    "sfc": 0.135
+   },
+   "saved": {
+    "yield": 0.0142,
+    "sfc": 0.0
+   }
+  }
+ ]
+}

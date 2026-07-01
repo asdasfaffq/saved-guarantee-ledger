@@ -1,0 +1,124 @@
+{
+  "delta": 0.1,
+  "n_seeds": 200,
+  "eps_grid": [
+    0.0,
+    0.4,
+    0.8,
+    1.2
+  ],
+  "rows": [
+    {
+      "eps": 0.0,
+      "method": "FixedN(SUPG/ReDD)",
+      "coverage": 1.0,
+      "mean_lb": 0.7120572870614855,
+      "calls": 228
+    },
+    {
+      "eps": 0.0,
+      "method": "PooledCS(streamReDD)",
+      "coverage": 0.965,
+      "mean_lb": 0.8032187499999993,
+      "calls": 228
+    },
+    {
+      "eps": 0.0,
+      "method": "SAVED-window(no-tilt abl)",
+      "coverage": 0.84,
+      "mean_lb": 0.7690437500000002,
+      "calls": 228
+    },
+    {
+      "eps": 0.0,
+      "method": "SAVED(drift-robust)",
+      "coverage": 0.84,
+      "mean_lb": 0.7690437500000002,
+      "calls": 228
+    },
+    {
+      "eps": 0.4,
+      "method": "FixedN(SUPG/ReDD)",
+      "coverage": 0.86,
+      "mean_lb": 0.703257287061485,
+      "calls": 228
+    },
+    {
+      "eps": 0.4,
+      "method": "PooledCS(streamReDD)",
+      "coverage": 0.525,
+      "mean_lb": 0.7522249999999996,
+      "calls": 228
+    },
+    {
+      "eps": 0.4,
+      "method": "SAVED-window(no-tilt abl)",
+      "coverage": 0.6950000000000001,
+      "mean_lb": 0.6657437500000013,
+      "calls": 228
+    },
+    {
+      "eps": 0.4,
+      "method": "SAVED(drift-robust)",
+      "coverage": 0.965,
+      "mean_lb": 0.619427499919152,
+      "calls": 228
+    },
+    {
+      "eps": 0.8,
+      "method": "FixedN(SUPG/ReDD)",
+      "coverage": 0.08999999999999997,
+      "mean_lb": 0.6935572870614852,
+      "calls": 228
+    },
+    {
+      "eps": 0.8,
+      "method": "PooledCS(streamReDD)",
+      "coverage": 0.020000000000000018,
+      "mean_lb": 0.6933374999999995,
+      "calls": 228
+    },
+    {
+      "eps": 0.8,
+      "method": "SAVED-window(no-tilt abl)",
+      "coverage": 0.515,
+      "mean_lb": 0.5367312500000008,
+      "calls": 228
+    },
+    {
+      "eps": 0.8,
+      "method": "SAVED(drift-robust)",
+      "coverage": 0.995,
+      "mean_lb": 0.44409874983830383,
+      "calls": 228
+    },
+    {
+      "eps": 1.2,
+      "method": "FixedN(SUPG/ReDD)",
+      "coverage": 0.0,
+      "mean_lb": 0.6842572870614855,
+      "calls": 228
+    },
+    {
+      "eps": 1.2,
+      "method": "PooledCS(streamReDD)",
+      "coverage": 0.0,
+      "mean_lb": 0.6331499999999999,
+      "calls": 228
+    },
+    {
+      "eps": 1.2,
+      "method": "SAVED-window(no-tilt abl)",
+      "coverage": 0.32999999999999996,
+      "mean_lb": 0.40745000000000003,
+      "calls": 228
+    },
+    {
+      "eps": 1.2,
+      "method": "SAVED(drift-robust)",
+      "coverage": 1.0,
+      "mean_lb": 0.26850124975745543,
+      "calls": 228
+    }
+  ]
+}

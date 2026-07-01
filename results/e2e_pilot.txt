@@ -1,0 +1,19 @@
+
+RQ2 end-to-end sem_filter with REAL GLM-5.2 oracle (pool=120, seeds=10)
+GLM oracle: 25 positives; vs dataset truth recall=0.82 prec=0.92; 120 unique GLM labels in 272s (cached after).
+
+ eps |           SUPG fixed-n |            stream-ReDD |                  SAVED
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/lyx/桌面/pvldb2027-guarantee-bench/experiments/e2e_glm_filter.py", line 142, in <module>
+    main()
+    ~~~~^^
+  File "/home/lyx/桌面/pvldb2027-guarantee-bench/experiments/e2e_glm_filter.py", line 130, in main
+    r = run(eps, s, glm_pos_scores, n_seeds=n_seeds)
+  File "/home/lyx/桌面/pvldb2027-guarantee-bench/experiments/e2e_glm_filter.py", line 99, in run
+    cert, _ = certify([(x, tt) for (x, tt) in pool], list(fresh), t, kappa, m)
+              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lyx/桌面/pvldb2027-guarantee-bench/experiments/e2e_glm_filter.py", line 59, in certify
+    cs.update(float(x))
+              ~~~~~^^^
+TypeError: float() argument must be a string or a real number, not 'tuple'

@@ -1,0 +1,41 @@
+
+YIELD vs BUDGET (session-level; delta=0.1, target=0.8)
+
+ eps=0.0   B=25  B=50  B=100  B=200  B=400
+  SAVED (per-sample) yld 0.56 0.63 0.71 0.81 0.91
+                     sFC 0.00 0.00 0.00 0.00 0.00
+             max-age yld 0.56 0.63 0.71 0.81 0.91
+                     sFC 0.00 0.00 0.00 0.00 0.00
+          fresh-only yld 0.03 0.20 0.43 0.63 0.81
+                     sFC 0.00 0.00 0.00 0.00 0.00
+       recent-window yld 0.38 0.45 0.58 0.69 0.85
+                     sFC 0.00 0.00 0.00 0.00 0.00
+         stream-ReDD yld 0.56 0.63 0.71 0.81 0.91
+                     sFC 0.00 0.00 0.00 0.00 0.00
+
+ eps=0.4   B=25  B=50  B=100  B=200  B=400
+  SAVED (per-sample) yld 0.07 0.11 0.16 0.18 0.24
+                     sFC 0.00 0.03 0.03 0.05 0.05
+             max-age yld 0.04 0.08 0.13 0.16 0.24
+                     sFC 0.00 0.00 0.00 0.03 0.05
+          fresh-only yld 0.01 0.07 0.15 0.20 0.25
+                     sFC 0.05 0.07 0.17 0.25 0.20
+       recent-window yld 0.12 0.14 0.19 0.22 0.27
+                     sFC 0.05 0.15 0.23 0.28 0.17
+         stream-ReDD yld 0.20 0.20 0.23 0.23 0.28
+                     sFC 0.10 0.12 0.05 0.12 0.05
+
+ eps=0.8   B=25  B=50  B=100  B=200  B=400
+  SAVED (per-sample) yld 0.03 0.05 0.07 0.10 0.12
+                     sFC 0.00 0.00 0.03 0.00 0.05
+             max-age yld 0.02 0.04 0.06 0.09 0.12
+                     sFC 0.00 0.00 0.00 0.00 0.05
+          fresh-only yld 0.00 0.04 0.08 0.12 0.12
+                     sFC 0.07 0.12 0.15 0.17 0.17
+       recent-window yld 0.06 0.07 0.10 0.13 0.14
+                     sFC 0.12 0.07 0.17 0.20 0.17
+         stream-ReDD yld 0.08 0.12 0.13 0.14 0.15
+                     sFC 0.30 0.10 0.07 0.00 0.10
+
+saved -> /home/lyx/桌面/pvldb2027-guarantee-bench/results/yield_budget.json
+figure -> /home/lyx/桌面/pvldb2027-guarantee-bench/figures/fig_yield_budget.pdf

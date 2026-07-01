@@ -1,0 +1,153 @@
+{
+  "delta": 0.1,
+  "target": 0.8,
+  "gamma": 0.04,
+  "n_seeds": 100,
+  "cells": [
+    {
+      "ell": 0.5,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 462.96
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 2729.06
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 320.99
+      },
+      "strongest_valid": "pooled",
+      "verdict": "C2 WIN vs pooled"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.2,
+      "pooled": {
+        "valid": true,
+        "fresh": 1253.73
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 3095.63
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 1871.96
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.4,
+      "pooled": {
+        "valid": false,
+        "fresh": 2495.32
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3311.63
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 3035.38
+      },
+      "strongest_valid": "none",
+      "verdict": "no valid base"
+    },
+    {
+      "ell": 0.5,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 3066.44
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3456.48
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 3410.0
+      },
+      "strongest_valid": "none",
+      "verdict": "no valid base"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.0,
+      "pooled": {
+        "valid": true,
+        "fresh": 251.83
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 2714.43
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 187.3
+      },
+      "strongest_valid": "pooled",
+      "verdict": "C2 WIN vs pooled"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.2,
+      "pooled": {
+        "valid": true,
+        "fresh": 1033.89
+      },
+      "perquery": {
+        "valid": true,
+        "fresh": 3095.94
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 1633.36
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.4,
+      "pooled": {
+        "valid": true,
+        "fresh": 2332.56
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3293.3
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 2894.28
+      },
+      "strongest_valid": "pooled",
+      "verdict": "no win (pooled<=)"
+    },
+    {
+      "ell": 0.9,
+      "eps": 0.8,
+      "pooled": {
+        "valid": false,
+        "fresh": 2971.8
+      },
+      "perquery": {
+        "valid": false,
+        "fresh": 3454.28
+      },
+      "SAVEDw": {
+        "valid": true,
+        "fresh": 3359.95
+      },
+      "strongest_valid": "none",
+      "verdict": "no valid base"
+    }
+  ],
+  "c2_sweet_spot_nonempty": true
+}

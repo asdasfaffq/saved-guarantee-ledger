@@ -1,0 +1,7 @@
+{"delta":0.1,"target":0.85,"n_pred":40,"n_labels":90,"n_seeds":2000,
+ "note":"post-selection stress test; validates A3/Prop4. Reproduce: python3 experiments/safe_adaptivity.py",
+ "rows":[
+  {"method":"unsafe","false_cert":0.029,"certification_rate":0.874},
+  {"method":"firewall","false_cert":0.002,"certification_rate":0.090},
+  {"method":"splitting","false_cert":0.001,"certification_rate":0.025}
+ ]}
