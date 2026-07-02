@@ -29,6 +29,7 @@ python3 experiments/b2_neural.py || echo "(b2_neural needs sentence-transformers
 
 echo "== Phase B (session-level; each self-generates its table/figure) =="
 python3 experiments/e2e_glm_filter.py            # RQ2 end-to-end sem_filter, REAL GLM-5.2 oracle (cached, instant)
+python3 experiments/natural_drift.py             # naturally time-ordered corpus (real arXiv 2016-2024; Table natural)
 python3 experiments/valid_baselines_alpha.py     # RQ4 fair alpha-spent valid-methods table (paper Table)
 # python3 experiments/exp_locality.py            # (superseded by valid_baselines_alpha; not cited in paper)
 python3 experiments/exp_kappa_sentinel.py        # RQ6 kappa sentinel-audit main experiment

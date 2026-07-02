@@ -29,7 +29,12 @@ coverage, ablation, and cost experiments run on deterministic-truth or cached da
 - `experiments/` — one script per result (coverage-vs-drift, fixed-budget trustworthy
   certification, clean drift-shift ablation, valid-baseline comparison with α-spending,
   κ-audit, prevalence/cost accounting, safe-adaptivity, biased-oracle/PPI, precision,
-  systems overhead, and the end-to-end GLM-5.2 `sem_filter` integration check).
+  systems overhead, the end-to-end GLM-5.2 `sem_filter` integration check, and
+  `natural_drift.py` — the naturally time-ordered corpus check on real arXiv abstracts,
+  2016–2024, where drift arises from real chronology rather than an imposed schedule).
+- `data/` — `fetch_arxiv.py` builds the naturally time-ordered corpus (cs.LG vs cs.DB
+  abstracts, 220/category/year) and `arxiv_timed.json` is the exact cached snapshot used
+  in the paper, so the numbers reproduce without re-hitting the arXiv API.
 - `results/` — the JSON outputs and honest `*_FINDINGS.md` notes behind each table/figure.
 - `tests/` — pytest gates (anytime coverage ≤ δ, non-vacuous bounds, exact oracle-call
   accounting / budget-leak sentinel).
@@ -54,6 +59,9 @@ Responses are cached locally (gitignored), so a re-run needs no further API call
 The paper reports an explicit **cost boundary**: SAVED does not reduce oracle-label
 cost relative to a valid baseline. A budget-leakage sentinel in every run asserts the
 oracle-call count equals the intended budget, so this negative result cannot be an
-accounting artifact. Remaining future work (naturally time-ordered corpora,
-human-adjudicated gold, a full learned-proxy LOTUS cascade, aggregate/join operators)
-is stated as open in the paper, not claimed here.
+accounting artifact. The coverage result is also reproduced on a naturally time-ordered corpus
+(`experiments/natural_drift.py`): a proxy trained once on pre-2019 arXiv abstracts drifts
+on its own, the fixed-threshold recall falls 0.75→0.63 with no imposed schedule, and the
+naive baselines issue false certificates in 23–25% of sessions while SAVED holds coverage.
+Remaining future work (human-adjudicated gold, a full learned-proxy LOTUS cascade,
+aggregate/join operators) is stated as open in the paper, not claimed here.
