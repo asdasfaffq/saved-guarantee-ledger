@@ -59,6 +59,60 @@ def cert_pooled(cal, reuse, ages, kappa, dq, shift):
     return cs.lower() >= R
 
 
+def run_prospective(rows, tau, n_seeds=200, m_sent=60, delta_audit=0.05, kappa_prior=0.15):
+    """Deployable variant: SAVED's drift bound kappa is estimated ONLINE from PAST bins only
+    (a rolling sentinel audit with a DKW margin), never the full trajectory. Reports the three
+    rates the guarantee actually trades off: certified (trusted) yield, abstention, false-cert.
+    kappa_hat(q) upper-bounds the largest recall drop observed among bins < q, plus a DKW margin;
+    with <2 past bins there is no drift evidence, so a conservative prior is used (-> abstain)."""
+    order, binmap = bins_by_halfyear(rows)
+    stream_bins = [b for b in order if b.split("H")[0] >= SPLIT]
+    true_recall = {b: float(np.mean(binmap[b] >= tau)) for b in order}
+    N = len(stream_bins)
+    eps_m = float(np.sqrt(np.log(2.0 / delta_audit) / (2 * m_sent)))  # DKW half-width on a recall estimate
+    cert = good_cert = abstain = bad = 0
+    kappa_trace = []
+    for seed in range(n_seeds):
+        rng = np.random.default_rng(seed)
+        cal0 = (rng.choice(binmap[stream_bins[0]], B_CAL) >= tau).astype(float)
+        cal_aged = [(x, 0) for x in cal0]
+        pool = []
+        r_hat = []                                    # per-bin sentinel recall estimates, past only
+        sess_false = False
+        for qi, b in enumerate(stream_bins):
+            scores = binmap[b]
+            if len(scores) < 5:
+                continue
+            good = true_recall[b] >= R - 1e-9
+            # prospective kappa from PAST sentinel estimates only (bins 0..qi-1)
+            if len(r_hat) >= 2:
+                drops = [max(0.0, r_hat[j-1] - r_hat[j]) for j in range(1, len(r_hat))]
+                kappa_hat = max(drops) + 2 * eps_m
+            else:
+                kappa_hat = kappa_prior
+            if seed == 0:
+                kappa_trace.append(round(kappa_hat, 3))
+            fresh = (rng.choice(scores, B_FRESH) >= tau).astype(float)
+            reuse = [x for (x, _) in pool] + list(fresh)
+            ages = [qi - bi for (_, bi) in pool] + [0] * len(fresh)
+            cal_ap = [(x, qi) for (x, _) in cal_aged]
+            certified = cert_pooled(cal_ap, reuse, ages, kappa_hat, DELTA / N, shift=True)
+            if certified:
+                cert += 1
+                if good: good_cert += 1
+                else: sess_false = True
+            else:
+                abstain += 1
+            # spend sentinel labels on THIS bin so the NEXT query can audit against it
+            r_hat.append(float(np.mean(rng.choice(scores, m_sent) >= tau)))
+            for x in fresh:
+                pool.append((float(x), qi))
+        if sess_false: bad += 1
+    tot = N * n_seeds
+    return {"yield": good_cert / tot, "abstain": abstain / tot, "sfc": bad / n_seeds,
+            "eps_m": eps_m, "kappa_trace": kappa_trace}
+
+
 def run(rows, tau, n_seeds=200):
     order, binmap = bins_by_halfyear(rows)
     stream_bins = [b for b in order if b.split("H")[0] >= SPLIT]
@@ -140,13 +194,25 @@ def main():
     print("  " + "  ".join(f"{b}:{tr[b]:.2f}" for b in sb))
     print(f"\n{'method':>10} | {'trusted yield':>13} | {'session false-cert':>18}")
     print("-"*48)
-    for m, name in [("fixedn","SUPG fixed-n"),("pooled","stream-ReDD"),("saved","SAVED")]:
+    for m, name in [("fixedn","SUPG fixed-n"),("pooled","stream-ReDD"),("saved","SAVED(retro-k)")]:
         r = res[m]; inv = "INVALID" if r["sfc"] > DELTA else "valid"
-        print(f"{name:>10} | {r['yield']:>13.2f} | {r['sfc']:.3f} [{inv}]")
+        print(f"{name:>13} | {r['yield']:>13.2f} | {r['sfc']:.3f} [{inv}]")
+    prosp = run_prospective(rows, tau)
+    pinv = "INVALID" if prosp["sfc"] > DELTA else "valid"
+    print(f"\nprospective rolling sentinel audit (kappa from PAST bins only; deployable, no foreknowledge):")
+    print(f"  kappa_hat trace over bins (seed0, m=60): {prosp['kappa_trace']}")
+    print(f"{'m_sentinel':>10} | {'yield':>6} | {'abstain':>7} | {'false-cert':>10}")
+    prosp_grid = []
+    for m in (60, 120, 240, 480):
+        p = run_prospective(rows, tau, m_sent=m)
+        prosp_grid.append({"m": m, **{k: p[k] for k in ("yield", "abstain", "sfc")}})
+        pv = "INVALID" if p["sfc"] > DELTA else "valid"
+        print(f"{m:>10} | {p['yield']:>6.2f} | {p['abstain']:>7.2f} | {p['sfc']:.3f} [{pv}]")
     grid = sweep(rows)
     out = {"tau": tau, "R": R, "kappa": kappa, "n": len(rows), "npos": npos,
            "B_cal": B_CAL, "B_fresh": B_FRESH, "split": SPLIT,
-           "recall_traj": {b: tr[b] for b in sb}, "results": res, "sweep": grid}
+           "recall_traj": {b: tr[b] for b in sb}, "results": res, "sweep": grid,
+           "prospective": prosp, "prospective_budget": prosp_grid}
     json.dump(out, open(os.path.join(os.path.dirname(__file__), "..", "results", "natural_drift.json"), "w"), indent=1)
     print("\nsaved -> results/natural_drift.json")
 

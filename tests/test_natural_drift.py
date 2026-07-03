@@ -39,6 +39,21 @@ def test_saved_valid_everywhere_baselines_breach_on_crossing():
 
 
 @pytest.mark.skipif(not os.path.exists(DATA), reason="arxiv_timed.json not fetched")
+def test_prospective_audit_never_false_certifies():
+    """The deployable variant: kappa estimated online from PAST bins only must still hold
+    session-level coverage (audit-or-abstain), never a silent false certificate."""
+    import experiments.natural_drift as nd
+
+    rows = nd.build()
+    pos_early = np.array([r["score"] for r in rows if r["label"] == 1 and r["date"][:4] < nd.SPLIT])
+    tau = float(np.percentile(pos_early, 15))
+    nd.R = 0.68
+    p = nd.run_prospective(rows, tau, n_seeds=80)
+    nd.R = 0.68
+    assert p["sfc"] <= nd.DELTA, f"prospective audit breached coverage: sfc={p['sfc']:.3f}"
+
+
+@pytest.mark.skipif(not os.path.exists(DATA), reason="arxiv_timed.json not fetched")
 def test_natural_recall_actually_drifts_down():
     """Sanity: the real corpus must exhibit a downward recall drift, else the test is vacuous."""
     import experiments.natural_drift as nd
